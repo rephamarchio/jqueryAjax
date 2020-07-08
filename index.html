@@ -4,13 +4,16 @@
 	<title>Minha pagina</title>
 	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-	<input id="cep" >
-<button type="button" onclick="cunsultaCep()">Consultar</button>
-<p id="logradouro"></p>
-<p id="bairro"></p>
-<p id="localidade"></p>
-<p id="uf"></p>
+	<nav class="navbar navbar-dark  bg-dark">
+		<a class= "navbar-brand text-write" > Consulta CEP</a>
+    <div class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="00000-000" id="cep">
+      <button class="btn btn-outline-success my-2 my-sm-0" onclick="cunsultaCep()">Buscar</button>
+    </div>
+  
+</nav>
 </body>
 </html>
