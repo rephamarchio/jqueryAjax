@@ -9,10 +9,11 @@ function cunsultaCep() {
 		success: function(response){
 			console.log(response);
 			//document.getElementById("logradouro").inner.HTML = response.logradouro;
-			//$("#logradouro").html(response.logradouro);
-			//$("#bairro").html(response.bairro);
-			//$("#localidade").html(response.localidade);
-			//$("#uf").html(response.uf);
+			$("#logradouro").html(response.logradouro);
+			$("#bairro").html(response.bairro);
+			$("#localidade").html(response.localidade);
+			$("#uf").html(response.uf);
+			$("#titulo_cep").html("CEP " +response.cep);
 		}
 
 	})
